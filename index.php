@@ -5,7 +5,7 @@ include_once 'login.php';
 
 
 $host = "localhost";
-$dbname = "dbclasepoo";
+$dbname = "gestorclientes";
 $usuario = "root";
 $contrasena = "";
 $conexion = new ConexionPDO($host, $dbname, $usuario, $contrasena);
@@ -42,11 +42,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <h1 class="title">Inicio de sesion</h1>
         <label >
             <i class="fa-solid fa-user"></i>
-            <input placeholder="username" id="usuario" name="user">
+            <input placeholder="Usuario" id="usuario" name="user">
         </label>
         <label >
             <i class="fa-solid fa-lock"></i>
-            <input type="password" placeholder="password" id="contraseña" name="pwd">
+            <input type="password" placeholder="Contraseña" id="contraseña" name="pwd">
         </label>
 
         <button id="button">Iniciar sesion</button>

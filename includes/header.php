@@ -18,11 +18,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>                      
+                        <a class="nav-link active" aria-current="page" href="dash.php">Home</a>                      
+                    </div>
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="nuevoCliente.php">Añadir cliente</a>                      
                     </div>
                 </div>
                 <a class="nav-link ml-auto p-2" href="salir.php">Salir de la sesion</a>
             </div>
         </nav>
-        <h5>Bienvenido: <?php echo $_SESSION['usuario'] ?></h5>
     </header>
